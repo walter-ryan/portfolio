@@ -80,7 +80,8 @@ export default function GithubProjectsSection() {
                     <GithubProjectCard repo="walter-ryan/pitch-tester"
                         title="Pitch Tester"
                         description='A web app for practicing and improving your pitch recognition skills.' />
-                    <GithubProjectCard repo="walter-ryan/pitch-tester" title="Pitch Tester" />
+                    <GithubProjectCard repo="walter-ryan/portfolio" title="Portfolio Website"
+                        description='You are currently looking at my portfolio website, built with Next.js and Tailwind CSS.' />
                     <GithubProjectCard repo="walter-ryan/pitch-tester" title="Pitch Tester" />
                 </div>
             </div>
