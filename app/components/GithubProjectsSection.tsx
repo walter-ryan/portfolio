@@ -68,22 +68,22 @@ function GithubProjectCard({ repo, title, description }: GithubProjectCardProps)
 
 export default function GithubProjectsSection() {
     return (
-        <section className="py-20 px-4">
+        <section className="py-20 px-4 border-b border-gray-800">
             <div className="max-w-6xl mx-auto">
-                <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold text-center">
+                <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl font-bold text-center">
                     Public Projects on GitHub
                 </motion.h2>
-                <p className="text-lg text-gray-400 mb-16 text-center max-w-2xl mx-auto">
+                <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-lg text-gray-400 mb-16 text-center max-w-2xl mx-auto">
                     While the projects I work on for my job are private, I have several projects that I maintain publicly on GitHub.
-                </p>
-                <div className="space-y-12">
+                </motion.p>
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-12">
                     <GithubProjectCard repo="walter-ryan/pitch-tester"
                         title="Pitch Tester"
                         description='A web app for practicing and improving your pitch recognition skills.' />
                     <GithubProjectCard repo="walter-ryan/portfolio" title="Portfolio Website"
                         description='You are currently looking at my portfolio website, built with Next.js and Tailwind CSS.' />
                     <GithubProjectCard repo="walter-ryan/pitch-tester" title="Pitch Tester" />
-                </div>
+                </motion.div>
             </div>
         </section>
     );

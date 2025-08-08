@@ -8,9 +8,9 @@ export default function HeroSection() {
 
 	return (
 		<section className="min-h-screen relative overflow-hidden py-24 md:py-0">
-			<div className="absolute inset-0">
+			<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="absolute inset-0">
 				<div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
-			</div>
+			</motion.div>
 
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-12">

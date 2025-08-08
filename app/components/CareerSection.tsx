@@ -1,5 +1,6 @@
 
 import React, { useRef, useLayoutEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 type CareerEntryProps = {
     title: string;
@@ -99,8 +100,8 @@ export default function CareerSection() {
     }, []);
 
     return (
-        <section className="py-16 md:py-24 bg-gray-950 border-t border-gray-800">
-            <div className="max-w-4xl mx-auto px-4">
+        <section className="py-16 md:py-24 bg-gray-950 border-b border-gray-800">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">Career Journey</h2>
                 <div className="relative flex">
                     {/* Timeline */}
@@ -141,7 +142,7 @@ export default function CareerSection() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

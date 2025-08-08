@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import ContactSection from './components/ContactSection';
 import GithubProjectsSection from './components/GithubProjectsSection';
 import CareerSection from './components/CareerSection';
+import SkillsToolsSection from './components/SkillsToolsSection';
 
 export default function FullStackPortfolio() {
 	return (
@@ -11,6 +12,7 @@ export default function FullStackPortfolio() {
 			<HeroSection />
 			<GithubProjectsSection />
 			<CareerSection />
+			<SkillsToolsSection />
 			<ContactSection />
 		</main>
 	);

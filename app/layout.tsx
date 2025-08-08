@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 		'DevOps',
 		'System Architecture',
 		'Web Development',
-		'[Your Name]',
+		'Walter Ryan',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Walter Ryan' }],
+	creator: 'Walter Ryan',
 	openGraph: {
 		title: 'Walter Ryan - Software Developer Portfolio',
 		description:
